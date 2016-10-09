@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.dictionary.Welcome">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/MyTheme"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="26dp"
+                    android:text="Dictionary"
+                    android:id="@+id/text1"
+                    android:padding="10dp"
+                    android:textColor="#ffffff"
+                    android:layout_alignParentLeft="true"
+
+                    />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColorHint="#bbbbbb"
+                    android:hint="Enter the word to search"
+                    android:id="@+id/edit1"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:layout_alignParentLeft="true"
+                    android:visibility="gone"
+                    />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_menu_search"
+                android:elevation="10dp"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:id="@+id/image"
+                />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_welcome"/>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

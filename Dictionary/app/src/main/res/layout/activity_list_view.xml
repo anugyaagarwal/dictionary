@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/parentlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.example.dictionary.ListView">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/MyTheme">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/home"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textColorHint="#bbbbbb"
+            android:textSize="20dp"
+            />
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:src="@drawable/home"
+            />
+
+        <ImageView
+            android:id="@+id/sort"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:src="@drawable/sortalpha"
+            />
+  <ImageView
+            android:id="@+id/delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@+id/sort"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:src="@drawable/delete"
+            />
+
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relativeLayout"
+        android:layout_margin="20dp"
+        android:layout_marginTop="10dp"
+        android:divider="@null"
+        android:dividerHeight="10dp"></ListView>
+</RelativeLayout>

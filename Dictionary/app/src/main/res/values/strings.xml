@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Dictionary</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="About">The Dictionary explains the meaning of the english words.\n\nThe text in the dictionary is extracted from Pearson Developers Network.
+        \n\nIt is not in collaboration with any firm or organization.
+        It is solely the responsibility of the creator.\n\n\n   --By Anugya Agarwal</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_welcome">Welcome</string>
+
+    <string name="title_activity_list_view">ListView</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+</resources>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dictionary.Settings"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/MyTheme">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/home"
+            android:gravity="center"
+            android:text="Settings"
+            android:textColor="#ffffff"
+            android:textColorHint="#bbbbbb"
+            android:textSize="20dp"
+            />
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:src="@drawable/home"
+            />
+
+
+    </RelativeLayout>
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout"
+        android:layout_toEndOf="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/textView1"/>
+
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"/>
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner2"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"/>
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner3"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"/>
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout"
+        android:layout_margin="10dp"
+        android:text="Font Size"
+
+        android:textColor="@color/MyTheme"
+        android:textSize="20dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/spinner"
+        android:background="@color/MyTheme"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_margin="10dp"
+        android:text="Font Color"
+
+        android:textColor="@color/MyTheme"
+        android:textSize="20dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/spinner2"
+        android:background="@color/MyTheme"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/spinner3"
+        android:background="@color/MyTheme"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner2"
+        android:layout_margin="10dp"
+        android:text="Font Style"
+        android:textColor="@color/MyTheme"
+        android:textSize="20dp"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/spinner4"
+        android:background="@color/MyTheme"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner3"
+        android:layout_margin="10dp"
+        android:text="Background"
+        android:textColor="@color/MyTheme"
+        android:textSize="20dp"/>
+
+
+</RelativeLayout>
